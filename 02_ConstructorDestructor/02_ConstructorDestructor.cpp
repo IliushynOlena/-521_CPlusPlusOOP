@@ -114,6 +114,14 @@ public:
 		fullname.surname = surname;
 	}
 	//get
+	string getName()
+	{
+		return fullname.first_name;
+	}
+	int getDayBirthdate()
+	{
+		return birthdate.day;
+	}
 	void Initialization()
 	{
 		fullname.first_name = "no name";
