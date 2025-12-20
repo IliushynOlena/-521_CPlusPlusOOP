@@ -217,8 +217,34 @@ void gotoxy(int x, int y)
 	coordinate.Y = y;
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coordinate);
 }
+class User//Інкапсуляція
+{
+private:
+	string login;
+	string password;
+public:
+	//default constructor
+	User()
+	{
+		login = "none";
+		password = "none";
+	}
+	User(string login, string password)
+	{
+		//(*this).login = login;
+		this->login = login;
+		this->password = password;
+	}
+	//default destructor
+	~User()
+	{
+
+	}
+};
 int main()
 {
+	
+	User u;
 	gotoxy(10, 5);cout << "Main program" << endl;
 	gotoxy(12, 7);
 	Student st;//Constructor default
@@ -230,7 +256,7 @@ int main()
 	
 
 	
-	/*
+	
 	Student student2("Mukola", "Vasulovich", "Oliunuk", 11, 12, 2001);
 	student2.Print();
 	student2.AddMark(12);
@@ -250,6 +276,6 @@ int main()
 	}
 
 
-   */
+   
 }
 
