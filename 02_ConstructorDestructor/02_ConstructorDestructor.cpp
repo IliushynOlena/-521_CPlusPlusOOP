@@ -41,26 +41,7 @@ private:
 	}
 public:
 	//Constructor  ctor+TAB
-	Student()
-	{
-		cout << "Default Constructor" << endl;
-		fullname.first_name = "no name";
-		fullname.last_name = "no last name";
-		fullname.surname = "no surname";
-		birthdate.day = 1;
-		birthdate.month = 1;
-		birthdate.year = 1;
-		phone = "no phone";
-		city = "no city";
-		country = "no country";
-		schoolname = "none";
-		schoolname_city = "none";
-		schoolname_country = "none";
-		groupname = "none";
-		marks = nullptr;
-		markCount = 0;
-		averageMark = 0;
-	}
+	Student();
 	Student(string name, string last, string surname)
 	{
 		fullname.first_name = name;
@@ -101,10 +82,7 @@ public:
 
 	}
 	//set  
-	void setName(string name)
-	{
-		fullname.first_name = name;
-	}
+	void setName(string name);//prototype
 	void setLastName(string lastname)
 	{
 		fullname.last_name = lastname;
@@ -114,11 +92,11 @@ public:
 		fullname.surname = surname;
 	}
 	//get
-	string getName()
+	string getName()const
 	{
 		return fullname.first_name;
 	}
-	int getDayBirthdate()
+	int getDayBirthdate()const
 	{
 		return birthdate.day;
 	}
@@ -162,7 +140,7 @@ public:
 		markCount = 0;
 		averageMark = 0;
 	}
-	void Print()
+	void Print()const
 	{
 		cout << "Fullname : " << fullname.first_name << " " << fullname.last_name << " "
 			<< fullname.surname << endl;
@@ -279,3 +257,31 @@ int main()
    
 }
 
+
+//Constructor  ctor+TAB
+Student::Student()
+{
+	cout << "Default Constructor" << endl;
+	fullname.first_name = "no name";
+	fullname.last_name = "no last name";
+	fullname.surname = "no surname";
+	birthdate.day = 1;
+	birthdate.month = 1;
+	birthdate.year = 1;
+	phone = "no phone";
+	city = "no city";
+	country = "no country";
+	schoolname = "none";
+	schoolname_city = "none";
+	schoolname_country = "none";
+	groupname = "none";
+	marks = nullptr;
+	markCount = 0;
+	averageMark = 0;
+}
+
+//set  
+inline void Student::setName(string name)
+{
+	fullname.first_name = name;
+}

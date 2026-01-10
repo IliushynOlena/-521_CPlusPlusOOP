@@ -44,6 +44,12 @@ public:
 		{
 			this->marks[i] = original.marks[i];//12  == 12
 		}
+	/*	int num = 3;
+		for (size_t i = 0; i < markCount; i++)
+		{
+			if (marks[i] != num)
+				temp[i] = marks[i];
+		}*/
 	}
 	void Print()
 	{
