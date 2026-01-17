@@ -74,6 +74,12 @@ public:
         this->y += other.y;
         return *this;
     }
+    Point operator =(const Point& other)
+    {
+        this->x = other.x;
+        this->y = other.y;
+        return *this;
+    }
 
 #pragma endregion
 
@@ -84,8 +90,48 @@ public:
     }
 #pragma endregion
 
+#pragma region Binary operators == != > < >= <=
+    bool operator >(const Point& other)
+    {
+      /*  if ((this->x + this->y) > (other.x + other.y))
+            return true;
+        else
+            return false;*/
+
+        return ((this->x + this->y) > (other.x + other.y));
+    }
+    bool operator <(const Point& other)
+    {
+        return ((this->x + this->y) < (other.x + other.y));
+    }
+    bool operator >=(const Point& other)
+    {
+        return ((this->x + this->y) >= (other.x + other.y));
+    }
+    bool operator <=(const Point& other)
+    {
+        return ((this->x + this->y) <= (other.x + other.y));
+    }
+    bool operator ==(const Point& other)
+    {
+        return ((this->x == other.x) && (this->y == other.y));
+    }
+    bool operator !=(const Point& other)
+    {
+        return ((this->x != other.x) || (this->y != other.y));
+    }
+
+#pragma endregion
 
 
+
+};
+class MyClass
+{
+    //ctor
+    //destructor
+    //copy ctor
+    //operator =
 };
 int main()
 {
@@ -129,6 +175,28 @@ int main()
     cout << "Point 1 "; p1.Print();
     cout << "Point 2 "; p2.Print();
     res = -p1;
+    cout << " -p1  : "; res.Print();
+
+    //res = p1 = p2;
+   /* cout << "Point 1 "; p1.Print();
+    cout << "Point 2 "; p2.Print();
+    cout << "Res ";res.Print();*/
+    cout << "Point 1 "; p1.Print();
+    cout << "Point 2 "; p2.Print();
+    if (p1 > p2)
+        cout << "p1 > p2" << endl;
+    else
+        cout << "p1 < p2" << endl;
+
+    //5555/ 3600 = h
+    //5555/60%60
+
+    12:57:59
+    05:12:12
+    17:79:71
+
+
+
    /* cout << p1 + p2 << en;dl;
     cout << p1 - p2 << endl;
     cout << p1 * p2 << endl;
