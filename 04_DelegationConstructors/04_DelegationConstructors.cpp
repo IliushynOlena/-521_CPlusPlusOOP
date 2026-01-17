@@ -21,7 +21,6 @@ public:
 		return count;
 	}
 
-
 	//Human()//default constructor
 	//{
 	//	name = "no name";
