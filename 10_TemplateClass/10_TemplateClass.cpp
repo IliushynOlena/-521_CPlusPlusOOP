@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 using namespace std;
 
+int Multy(int a, int b) { return a * b; }
+int Multy(int a, int b, int c) { return a * b*c; }
 //int getMax(int* arr, int size)
 //{
 //    int max = arr[0];
