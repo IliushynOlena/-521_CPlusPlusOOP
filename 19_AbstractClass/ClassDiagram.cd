@@ -1,2 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Animal" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAEQCAgIAAAAAAEAAA=</HashCode>
+      <FileName>19_AbstractClass.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lion" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAACCAAAAAAAAgEAAA=</HashCode>
+      <FileName>19_AbstractClass.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Duck" Collapsed="true">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAIAAAAAAAAAAAEAAAAAAACAAAAAAAAAEAAA=</HashCode>
+      <FileName>19_AbstractClass.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Reptile" Collapsed="true">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAABAAAAAAAAAAAAAAAAAkAAA=</HashCode>
+      <FileName>19_AbstractClass.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Frog" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAgAA=</HashCode>
+      <FileName>19_AbstractClass.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -75,6 +75,7 @@ public:
     Stack(const Stack &other) = delete; //Stack(){}
     Stack(int size): size(size)//5
     {
+        //throw ex
         arr = new int[size];
         topIndex = EMPTY;
     }
@@ -90,7 +91,7 @@ public:
             arr[++topIndex] = element;//++topIndex;  arr[topIndex] = element <----
             return true;
         }
-        return false;
+        return false;////throw ex
     }
     bool IsEmpty()
     {
@@ -102,6 +103,7 @@ public:
         {
             return arr[topIndex--];//---> return arr[topIndex]; topIndex--;          
         }
+        ////throw ex
     }
     int Peek()
     {
@@ -109,6 +111,7 @@ public:
         {
             return arr[topIndex];        
         }
+        ////throw ex
     }
     int GetCount()
     {
