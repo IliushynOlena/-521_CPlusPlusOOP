@@ -73,6 +73,11 @@ public:
     //delete  default
     Stack() = default; //Stack(){}
     Stack(const Stack &other) = delete; //Stack(){}
+    void Test() = delete;
+    //c-tor default
+    //destructor
+    //copy c-tor
+    //operator = 
     Stack(int size): size(size)//5
     {
         //throw ex
@@ -137,7 +142,7 @@ public:
 int main()
 {
     Stack st(10);
-
+    Stack copy(st);
 
     st.Push(11);
     st.Push(20);

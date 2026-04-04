@@ -13,6 +13,7 @@ class Human
 	string name;
 	int age;
 	int weight;
+
 	static int count;//змінна одна для всіх
 public:
 	static int getCount()
@@ -34,6 +35,8 @@ public:
 		this->name = name;
 		//age = 0;
 		//weight = 0;
+		this->name = "Olena";
+	
 	}
 	Human(string name, int age): Human(name)//parametrized constructor with 2 parameter
 	{
@@ -73,8 +76,9 @@ public:
 	//}
 	void Print()const
 	{
-
-		cout << "Name : " << name << endl;
+	
+	
+		cout << "Name : " << this->name << endl;
 		cout << "Age : " << age << endl;
 		cout << "Weight : " << weight << endl;
 	}
@@ -87,6 +91,7 @@ public:
 int Human::count = 0;
 int main()
 {
+	//Human::count = 0;//1500
 	//cout << hello << endl;
 	//cout << "Hello world" << endl;//hello();
 
@@ -95,6 +100,7 @@ int main()
 
 	Human h;//default constructor
 	h.Print();
+	h.getCount();
 
 	cout << "Count : " << Human::getCount() << endl;
 	cout << "Count : " << h.getCount() << endl;

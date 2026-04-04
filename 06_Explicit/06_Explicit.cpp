@@ -83,11 +83,11 @@ void Show(Student s)
 }
 int main()
 {
-	Array arr5;//100
+	Array arr5;//100  default consttuctor
 	Student s(12);
 	Show(s);
 	Student s1("Ivan", 22);
-	Show(s1);
+	Show(12);
 	//Show(100);//implicit int ---> Studnet
 
 	int size = 5;

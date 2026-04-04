@@ -43,8 +43,12 @@ public:
 		cout << "Actual length : " << length << endl;
 	}
 };
-void Login(const char* login, const char* password)
+int Login(const char* login, const char* password)
 {
+	int a;
+	a = 5;
+	int b = 5;
+	//return 5;
 	if (strlen(password) < 6)
 		//cout << "To small password" << endl;
 		throw PasswordSmallException("To small password", strlen(password));
@@ -54,7 +58,7 @@ void Login(const char* login, const char* password)
 	if (!isalpha(password[0]) || !islower(password[0]))
 		//cout << "Passworrd invalid" << endl;
 		throw PasswordInvalidExeption("Passworrd invalid");
-
+	//throw 404;
 	cout << "Loading..........." << endl;
 
 }
